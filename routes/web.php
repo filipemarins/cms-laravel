@@ -15,7 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('post', 'PostsController');
+
+Route::get('post/{id}/{name}', 'PostsController@show_post');
+
+//Route::resource('post', 'PostsController');
+
+
 /*Route::get('/about', function() {
     return "Hi about page";
 });
