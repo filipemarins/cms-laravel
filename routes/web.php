@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', function() {
+Route::resource('post', 'PostsController');
+/*Route::get('/about', function() {
     return "Hi about page";
 });
 
@@ -31,4 +32,4 @@ Route::get('admin/post/example', function() {
     $url = route('admin.home');
 
     return $url;
-})->name('admin.home');
+})->name('admin.home');*/
